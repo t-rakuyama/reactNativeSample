@@ -7,17 +7,19 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 // import screens
-import Stack1 from './screens/Stack1';
-import Stack2 from './screens/Stack2';
+import List from './screens/List';
+import InputForm from './components/InputForm';
+import Input from './screens/Input';
 
 // StackNavigator を生成
 const AppNavigator = createStackNavigator(
   {
-    Stack1: Stack1,
-    Stack2: Stack2,
+    List: List,
+    InputForm: InputForm,
+    Input: Input,
   },
   {
-    initialRouteName: 'Stack1' // 初期表示画面
+    initialRouteName: 'List' // 初期表示画面
   }
 );
 
